@@ -1,0 +1,10 @@
+syntax="proto3";
+option go_package ="./request";
+
+message empty{
+  string body = 1;
+}
+
+service simpleServer{
+   rpc Request(empty)returns (empty){}
+}
